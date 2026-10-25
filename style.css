@@ -153,3 +153,13 @@ footer {
     }
 }
 
+
+/* Touchstone 4: product favorites and inline form validation */
+.favorite-buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+.favorite-buttons .favorite-button { width: auto; flex: 1 1 190px; }
+.favorite-button[aria-pressed="true"] { background-color: var(--peach); color: var(--charcoal); }
+.favorites-summary { font-weight: bold; padding: .75rem; border-left: 4px solid var(--peach); }
+.secondary-button { max-width: 240px; background: var(--charcoal); }
+.field-error { display: block; color: #a32020; font-weight: bold; margin-top: .25rem; }
+input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="true"] { border: 2px solid #a32020; }
+#form-status { font-weight: bold; }
